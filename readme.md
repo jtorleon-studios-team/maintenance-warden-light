@@ -7,7 +7,7 @@
 
 npm:
 ```sh
-npm install --save-dev maintenance-warden-light
+npm install --save-dev @jtorleon-studios-team/maintenance-warden-light
 ```
 
 github:

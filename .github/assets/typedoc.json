@@ -2,15 +2,15 @@
   "$schema": "https://typedoc.org/schema.json",
   "entryPointStrategy": "expand",
   "entryPoints": [
-    "src/"
+    "../../src/"
   ],
-  "out": "docs",
+  "out": "../../docs",
   "plugin": [
     "typedoc-material-theme"
   ],
   "themeColor": "#333333",
-  "favicon": ".github/assets/favicon.ico",
-  "customCss": ".github/assets/fix.css",
+  "favicon": "favicon.ico",
+  "customCss": "fix.css",
   "customFooterHtmlDisableWrapper": true,
   "hostedBaseUrl": "https://maintenance-warden-light.pages.dev/",
   "useHostedBaseUrlForAbsoluteLinks": true,

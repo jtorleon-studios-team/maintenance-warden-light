@@ -37,7 +37,7 @@ jobs:
                     {name: "🚀   Documentation", value: "https://maintenance-warden-light.pages.dev/"},
                     {name: "🚀   Repository", value: "https://github.com/jtorleon-studios-team/maintenance-warden-light"}
                   ],
-                  thumbnail: {url: "https://raw.githubusercontent.com/jtorleon-studios-team/maintenance-warden-light/refs/heads/main/icon.png" }
+                  thumbnail: {url: "https://raw.githubusercontent.com/jtorleon-studios-team/maintenance-warden-light/refs/heads/main/.github/assets/icon.png" }
                 }
               ]
             }'\

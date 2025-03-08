@@ -19,8 +19,6 @@ coverage
 .lock-wscript
 build/Release
 node_modules/
-mdk/node_modules/
-mdk/package-lock.json
 jspm_packages/
 web_modules/
 *.tsbuildinfo

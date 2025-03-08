@@ -1,0 +1,19 @@
+{
+  "name": "mdk-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "steve",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx index.ts | pino-pretty",
+    "dev": "tsx watch index.ts | pino-pretty"
+  },
+  "devDependencies": {
+    "@jtorleon-studios-team/maintenance-warden-light": "^1.0.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
