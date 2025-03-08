@@ -18,7 +18,7 @@
     "url": "git+https://github.com/jtorleon-studios-team/maintenance-warden-light.git"
   },
   "scripts": {
-    "cl:bot:deploy": "npx ci && npx typedoc && mv docs/functions docs/funcs && sed -i'.bak' 's/href=\"functions/href=\"funcs/g' docs/*.html",
+    "cl:bot:deploy": "npx ci && npx typedoc --options .github/typedoc.json && mv docs/functions docs/funcs && sed -i'.bak' 's/href=\"functions/href=\"funcs/g' docs/*.html",
     "git:bot:release": "git push --tags",
     "git:bot:save": "git add . && git commit -m \"save\" && git push",
     "git:bot:patch": "git add . && git commit -m \"auto commit before bump patch\" && npm version patch && npm run git:bot:release",
