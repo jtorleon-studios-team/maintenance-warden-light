@@ -16,5 +16,6 @@
       "license.md": true,
     },
     "files.associations": {},
+    "liveServer.settings.multiRootWorkspaceName": "root",
   }
 }
