@@ -4,8 +4,8 @@
   "entryPoints": [
     "../src/"
   ],
-  "out": "../docs",
-  "plugin": [
+  "out": "../dist/docs",
+  "plugin": [ 
     "typedoc-material-theme"
   ],
   "highlightLanguages": [
