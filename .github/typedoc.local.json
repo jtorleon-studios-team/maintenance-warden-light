@@ -1,13 +1,30 @@
 {
   "$schema": "https://typedoc.org/schema.json",
+  "navigationLinks": {
+    "projects": "https://modrinth.com/organization/jtorleon_studios",
+    "discord": "https://jtorleon-studios-team.github.io/",
+    "github": "https://github.com/jtorleon-studios-team/maintenance-warden-light",
+  },
+  "sidebarLinks": {},
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": false,
+    "includeFolders": true,
+    "compactFolders": true,
+    "excludeReferences": true
+  },
+  "categorizeByGroup": true,
   "entryPointStrategy": "expand",
   "entryPoints": [
     "../src/"
   ],
   "out": "../docs",
   "plugin": [
-    "typedoc-material-theme"
+    "typedoc-material-theme",
   ],
+  "sluggerConfiguration": {
+    "lowercase": true
+  },
   "highlightLanguages": [
     "typescript",
     "javascript",
@@ -16,10 +33,45 @@
     "html",
     "markdown"
   ],
+  "watch": true,
   "themeColor": "#333333",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+  },
+  "visibilityFilters": {},
+  "tsconfig": "../tsconfig.json",
   "favicon": "assets/favicon.ico",
   "customCss": "assets/fix.css",
   "readme": "assets/readme.md",
-  "customFooterHtmlDisableWrapper": true, 
+  "includeHierarchySummary": false,
+  "alwaysCreateEntryPointModule": false,
+  "customFooterHtmlDisableWrapper": true,
   "customFooterHtml": "<div class=footer-link><div><ul><li>Crafted by <strong><a href=https://jtorleon-studios-team.github.io/ target=_blank>JTorLeon Studios Team</a></strong> 2025</ul></div><div><h4>Contact</h4><ul><li><a href=https://typedoc.org target=_blank>Discord</a><li><a href=https://typedoc.org target=_blank>Report Issues</a></ul></div><div><h4>Legal</h4><ul><li><a href=https://typedoc.org target=_blank>Terms of Use</a><li><a href=https://typedoc.org target=_blank>Privacy Policy</a></ul></div><div><h4>Crafted with</h4><ul><li><a href=https://typedoc.org target=_blank>TypeDoc</a><li><a href=https://github.com/dmnsgn/typedoc-material-theme target=_blank>Typedoc Material</a></ul></div><p>THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT. IT IS NOT ENDORSED OR AFFILIATED WITH MOJANG OR MICROSOFT.</div>",
+  "kindSortOrder": [
+    "Document",
+    "Reference",
+    "Project",
+    "Module",
+    "Namespace",
+    "Enum",
+    "EnumMember",
+    "Class",
+    "Interface",
+    "TypeAlias",
+    "Constructor",
+    "Property",
+    "Variable",
+    "Function",
+    "Accessor",
+    "Method",
+    "Parameter",
+    "TypeParameter",
+    "TypeLiteral",
+    "CallSignature",
+    "ConstructorSignature",
+    "IndexSignature",
+    "GetSignature",
+    "SetSignature"
+  ]
 }

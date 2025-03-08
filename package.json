@@ -25,7 +25,7 @@
     "git:bot:minor": "git add . && git commit -m \"auto commit before bump minor\" && npm version minor && npm run git:bot:release",
     "git:bot:major": "git add . && git commit -m \"auto commit before bump major\" && npm version major && npm run git:bot:release",
     "________________________________________________________": "console.log('')",
-    "doc": "npx typedoc --categorizeByGroup --options .github/typedoc.local.json",
+    "doc": "npx typedoc --groupReferencesByType --options .github/typedoc.local.json",
     "start": "tsx ./test/index.ts | pino-pretty",
     "dev": "tsx watch ./test/index.ts | pino-pretty",
     "coverage": "npx test && npx make-coverage-badge --output-path ./.github/assets/coverage.svg",
@@ -46,6 +46,7 @@
     "tsx": "^4.19.3",
     "typedoc": "^0.27.9",
     "typedoc-material-theme": "^1.3.0",
+    "typedoc-plugin-merge-modules": "^6.1.0",
     "typescript": "^5.8.2"
   },
   "jest": {

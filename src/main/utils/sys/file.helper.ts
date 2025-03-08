@@ -1,13 +1,11 @@
+/** 
+ * @module
+ * @mergeModuleWith utils/sys
+ */
 
-import os from 'node:os';
 import path from 'node:path';
+
 export class FileHelper {
-
-  /**
-   * Determines if the current platform is Windows. 
-   */
-  public static readonly IS_WIN = os.type() === "Windows_NT";
-
   /**
    * Resolves a file path in a cross-platform way.
    * On Windows, backslashes (`\`) are replaced with slashes (`/`) to ensure consistency.

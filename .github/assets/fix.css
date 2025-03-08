@@ -1,7 +1,6 @@
 header {
   backdrop-filter: blur(5px) !important;
   -webkit-backdrop-filter: blur(5px) !important;
-  margin-bottom: 32px;
 }
 
 [data-theme="dark"] header {
@@ -15,15 +14,14 @@ header {
 }
 
 .site-menu,
-.col-content,
-.page-menu {
+.col-content {
   max-height: calc(100vh - var(--top-app-bar-height) - var(--footer-height)) !important;
   top: var(--top-app-bar-height) + 32px !important;
   overflow-y: auto !important;
 }
 
-.page-menu {
-  padding-bottom: 24px !important;
+.site-menu {
+  padding-right: 15px;
 }
 
 .tsd-navigation a {
@@ -74,6 +72,29 @@ footer>.tsd-generator:nth-child(1) {
   list-style-type: none;
 }
 
-.col-content, .page-menu {
-  border: 9px solid transparent!important;  
+.container-main {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) !important;
+  grid-template-areas: "sidebar content" !important;
+  padding: 15px !important;
+}
+
+.page-menu {
+  display: none !important;
+}
+
+
+.col-content {
+  box-sizing: unset !important;
+  padding: 0 !important;
+  border-radius: unset !important;
+  background-color: unset !important;
+}
+
+.col-content>* {
+  margin: 1.75rem 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1.75rem;
+  border-radius: 28px;
+  background-color: var(--md-sys-color-surface);
 }
