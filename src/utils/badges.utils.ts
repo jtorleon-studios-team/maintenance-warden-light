@@ -17,7 +17,7 @@
  * <img alt="CurseForge Game Versions" src="https://img.shields.io/curseforge/game-versions/:projectId">
  * ```
  * 
- * @see https://shields.io/badges/curse-forge-game-versions
+ * - https://shields.io/badges/curse-forge-game-versions
  * 
  * @param {string} projectId - The CurseForge project ID.
  * 
@@ -38,7 +38,7 @@ export function getCurseforgeBadgeVersions(projectId: string): string {
  * <img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/:projectId">
  * ```
  * 
- * @see https://shields.io/badges/curse-forge-downloads
+ * - https://shields.io/badges/curse-forge-downloads
  * 
  * @param {string} projectId - The CurseForge project ID.
  * 
