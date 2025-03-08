@@ -1,9 +1,9 @@
 name: Notify Discord
 run-name: ${{ github.actor }} - Notify Discord
-  #push:
 on:
-  registry_package:
-    types: [published]
+  push:
+    tags:
+      - "*.*.*"
   workflow_dispatch:
 permissions:
   contents: read
