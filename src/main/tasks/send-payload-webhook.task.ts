@@ -29,7 +29,7 @@
  */
 
 import { request } from "undici";
-import { CliHelper } from "../utils/cli.helper";
+import { CliHelper } from "../utils/helpers";
 import { Logger } from "pino";
 
 
