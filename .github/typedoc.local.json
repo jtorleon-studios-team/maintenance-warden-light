@@ -2,12 +2,11 @@
   "$schema": "https://typedoc.org/schema.json",
   "entryPointStrategy": "expand",
   "entryPoints": [
-    "../src/"
+    "../src/main/tasks",
+    "../src/main/utils",
   ],
   "out": "../docs",
-  "plugin": [
-    "typedoc-material-theme"
-  ],
+  "plugin": [],
   "highlightLanguages": [
     "typescript",
     "javascript",
@@ -17,7 +16,6 @@
     "markdown"
   ],
   "categorizeByGroup": true,
-  "themeColor": "#333333",
   "favicon": "assets/favicon.ico",
   "customCss": "assets/fix.css",
   "readme": "assets/readme.md",

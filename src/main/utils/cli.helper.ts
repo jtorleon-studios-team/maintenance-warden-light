@@ -1,6 +1,14 @@
+/**
+* @module utils
+* @category utils
+* @packageDocumentation
+*/
+
 import readline from 'node:readline';
 import logger from "pino";
-
+/**
+ * @module utils  
+ */
 export class CliHelper {
 
   /**

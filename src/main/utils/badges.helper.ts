@@ -1,11 +1,16 @@
+/**
+ * @module utils
+ * @group utils
+ * @packageDocumentation
+ */
 
 /**
-* ### Badges
-* 
-* ![example: Modrinth Game Versions](https://img.shields.io/modrinth/game-versions/dGVX5JbJ)
-* 
-* @packageDocumentation
-*/
+ * 
+ * ### Badge Helper
+ * 
+ * ![example: Modrinth Game Versions](https://img.shields.io/modrinth/game-versions/dGVX5JbJ)
+ *  
+ */
 export class BadgeHelper {
   /** 
    * template markdown
