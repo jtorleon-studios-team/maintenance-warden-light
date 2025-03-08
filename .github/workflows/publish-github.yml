@@ -20,11 +20,7 @@ jobs:
         with:
           node-version: "20.x"
           registry-url: "https://npm.pkg.github.com"
-          scope: "@jtorleon-studios-team"
-
-      - name: install
-        run: npm ci
-
+          scope: "@jtorleon-studios-team" 
       - name: publish
         run: npm publish
         env:
