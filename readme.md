@@ -12,4 +12,3 @@ npm install --save-dev maintenance-warden-light
 # from github
 npm install git+https://github.com/jtorleon-studios-team/maintenance-warden-light.git
 ```
-
