@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} - Publish Package on NPM
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "*.*.*"
   workflow_dispatch:
 jobs:
   build:

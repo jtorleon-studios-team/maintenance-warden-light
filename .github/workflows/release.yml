@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} - Create Github Release
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "*.*.*"
   workflow_dispatch:
 jobs:
   build:
