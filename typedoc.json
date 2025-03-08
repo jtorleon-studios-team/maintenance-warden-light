@@ -21,6 +21,7 @@
   "customCss": "assets/fix.css",
   "readme": "assets/readme.md",
   "customFooterHtmlDisableWrapper": true,
-  
+  "hostedBaseUrl": "https://maintenance-warden-light.pages.dev/",
+  "useHostedBaseUrlForAbsoluteLinks": true,
   "customFooterHtml": "<div class=footer-link><div><ul><li>Crafted by <strong><a href=https://jtorleon-studios-team.github.io/ target=_blank>JTorLeon Studios Team</a></strong> 2025</ul></div><div><h4>Contact</h4><ul><li><a href=https://typedoc.org target=_blank>Discord</a><li><a href=https://typedoc.org target=_blank>Report Issues</a></ul></div><div><h4>Legal</h4><ul><li><a href=https://typedoc.org target=_blank>Terms of Use</a><li><a href=https://typedoc.org target=_blank>Privacy Policy</a></ul></div><div><h4>Crafted with</h4><ul><li><a href=https://typedoc.org target=_blank>TypeDoc</a><li><a href=https://github.com/dmnsgn/typedoc-material-theme target=_blank>Typedoc Material</a></ul></div><p>THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT. IT IS NOT ENDORSED OR AFFILIATED WITH MOJANG OR MICROSOFT.</div>",
 }
