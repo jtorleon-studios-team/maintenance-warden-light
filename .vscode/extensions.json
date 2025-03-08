@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "bierner.markdown-mermaid",
+    "pkief.material-icon-theme",
+    "ritwickdey.liveserver",
+    "adpyke.codesnap",
+    "ms-vscode-remote.remote-wsl",
+    "tamasfe.even-better-toml",
+    "pomdtr.excalidraw-editor",
+    "misodee.vscode-nbt",
+    "slevesque.shader",
+  ]
+}

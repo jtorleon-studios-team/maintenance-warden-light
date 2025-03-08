@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "license.md": false,
+    "package-lock.json": true
+  },
+  "files.associations": {}
+}
