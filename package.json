@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "",
   "homepage": "https://github.com/jtorleon-studios-team/maintenance-warden-light#readme",
   "bugs": {
@@ -18,7 +18,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "git:bot:release": "git push --tags'" ,
+    "git:bot:release": "git push --tags'",
     "git:bot:save": "git add . && git commit -m \"save\" && git push",
     "git:bot:patch": "git add . && git commit -m \"auto commit before bump patch\" && npm version patch && npm run git:bot:release",
     "git:bot:minor": "git add . && git commit -m \"auto commit before bump minor\" && npm version minor && npm run git:bot:release",
