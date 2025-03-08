@@ -4,7 +4,7 @@
   "entryPoints": [
     "../src/"
   ],
-  "out": "../dist/docs",
+  "out": "../docs",
   "plugin": [
     "typedoc-material-theme"
   ],
@@ -15,8 +15,9 @@
     "json",
     "html",
     "markdown"
-  ], 
-"themeColor": "#333333",
+  ],
+  "categorizeByGroup": true,
+  "themeColor": "#333333",
   "favicon": "assets/favicon.ico",
   "customCss": "assets/fix.css",
   "readme": "assets/readme.md",

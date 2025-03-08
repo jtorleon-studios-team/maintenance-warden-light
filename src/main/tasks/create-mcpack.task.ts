@@ -1,7 +1,7 @@
 
 
 import { request } from "undici";
-import { createSimpleLogger } from "../utils/utils";
+import { CliHelper } from "../utils/cli.helper";
 
 export type Config = {
   /**
@@ -17,6 +17,14 @@ export type Config = {
  * test
  * @param options 
  */
-export async function run(options: Config) {
- 
+export class CreateMcPackTask {
+  private readonly _options: Config;
+
+  public constructor(options: Config) {
+    this._options = options;
+  }
+
+  public run(): void {
+    console.log(this._options);
+  }
 }

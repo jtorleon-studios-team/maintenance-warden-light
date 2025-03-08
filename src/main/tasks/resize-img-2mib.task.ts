@@ -35,20 +35,29 @@ import sharp from "sharp";
  * @param config 
  * @returns 
  */
-export async function run(config: Config) {
-  const images = await getImagesInDirectory(config.directory);
+export class ResizeImageTask {
+  private readonly _options: Config;
 
-  if (images.length === 0) {
-    console.log("Aucune image à optimiser.");
-    return;
+  public constructor(options: Config) {
+    this._options = options;
   }
 
-  for (const image of images) {
-    await optimizeImage(image);
-  }
+  public async run(): Promise<void> {
+    const images = await getImagesInDirectory(this._options.directory);
 
-  console.log("Optimisation terminée !");
+    if (images.length === 0) {
+      console.log("Aucune image à optimiser.");
+      return;
+    }
+
+    for (const image of images) {
+      await optimizeImage(image);
+    }
+
+    console.log("Optimisation terminée !");
+  }
 }
+
 
 /**
  * ## Run Task

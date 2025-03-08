@@ -20,12 +20,18 @@
  */
 
 /**
- * ## Run Task
- * 
- * @param options 
+ * Task Description
  */
-export async function run(options: Config) {
+export class TemplateTask {
+  private readonly _options: Config;
 
+  public constructor(options: Config) {
+    this._options = options;
+  }
+
+  public run(): void {
+    console.log(this._options);
+  }
 }
 
 export type Config = {

@@ -29,7 +29,9 @@
  */
 
 import { request } from "undici";
-import { createSimpleLogger } from "../utils/utils";
+import { CliHelper } from "../utils/cli.helper";
+import { Logger } from "pino";
+
 
 /**
  * ## Run Task
@@ -52,37 +54,44 @@ import { createSimpleLogger } from "../utils/utils";
  *         the [payload](https://en.wikipedia.org/wiki/Payload_(computing)) 
  *         is invalid.
  */
-export async function run(options: Config) {
-  const logger = createSimpleLogger("send-payload");
-  try {
-    const webhookUrl = options.webhookUrl;
-    options.webhookUrl = "**********";
+export class SendPlayloadTask {
+  private readonly _logger: Logger;
+  private readonly _options: Config;
 
-    const response = await request(webhookUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(options.payload)
-    });
+  public constructor(options: Config) {
+    this._options = options;
+    this._logger = CliHelper.createSimpleLogger("send-payload");
+  }
 
-    if (response.statusCode === 204) {
-      logger.info("Success sending payload", {
-        statusCode: response.statusCode,
-        body: response.body
+  public async run(): Promise<void> {
+    try {
+      const webhookUrl = this._options.webhookUrl;
+      this._options.webhookUrl = "**********";
+
+      const response = await request(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(this._options.payload)
       });
-    } else {
-      logger.error(`Failed sending payload: ${response.statusCode}`);
-      logger.error(`Body: ${JSON.stringify(response.headers)}`);
-      logger.error(`Header: ${JSON.stringify(response.body)}`);
+
+      if (response.statusCode === 204) {
+        this._logger.info("Success sending payload", {
+          statusCode: response.statusCode,
+          body: response.body
+        });
+      } else {
+        this._logger.error(`Failed sending payload: ${response.statusCode}`);
+        this._logger.error(`Body: ${JSON.stringify(response.headers)}`);
+        this._logger.error(`Header: ${JSON.stringify(response.body)}`);
+      }
+    } catch (error) {
+      this._logger.error("Error sending payload:", { error, options: this._options });
     }
-  } catch (error) {
-    logger.error("Error sending payload:", {
-      error, options
-    });
   }
 }
-
+ 
 export type Config = {
   /**
    * [Webhook](https://en.wikipedia.org/wiki/Webhook) URL.
