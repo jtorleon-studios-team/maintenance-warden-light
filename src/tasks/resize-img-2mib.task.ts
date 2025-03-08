@@ -35,7 +35,7 @@ import sharp from "sharp";
  * @param config 
  * @returns 
  */
-export async function Run(config: Config) {
+export async function run(config: Config) {
   const images = await getImagesInDirectory(config.directory);
 
   if (images.length === 0) {

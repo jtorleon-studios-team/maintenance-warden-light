@@ -14,9 +14,9 @@ export type Config = {
 };
 
 /** 
- * 
+ * test
  * @param options 
  */
-export async function Run(options: Config) {
+export async function run(options: Config) {
  
 }

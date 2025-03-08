@@ -52,7 +52,7 @@ import { createSimpleLogger } from "../utils/utils";
  *         the [payload](https://en.wikipedia.org/wiki/Payload_(computing)) 
  *         is invalid.
  */
-export async function Run(options: Config) {
+export async function run(options: Config) {
   const logger = createSimpleLogger("send-payload");
   try {
     const webhookUrl = options.webhookUrl;

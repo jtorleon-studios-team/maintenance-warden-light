@@ -17,8 +17,8 @@
     "markdown"
   ],
   "themeColor": "#333333",
-  "favicon": ".github/assets/favicon.ico",
-  "customCss": ".github/assets/fix.css",
+  "favicon": "assets/favicon.ico",
+  "customCss": "assets/fix.css",
   "customFooterHtmlDisableWrapper": true,
   "hostedBaseUrl": "https://maintenance-warden-light.pages.dev/",
   "useHostedBaseUrlForAbsoluteLinks": true,
