@@ -1,7 +1,7 @@
 
 
 import { request } from "undici";
-import { CliHelper } from "../utils/helpers";
+import { CliHelper } from "../helpers/helpers";
 
 export type Config = {
   /**
