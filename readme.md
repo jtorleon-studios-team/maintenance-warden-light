@@ -5,10 +5,12 @@
 
 ## Install
 
+npm:
 ```sh
-# from npm
 npm install --save-dev maintenance-warden-light
+```
 
-# from github
+github:
+```sh
 npm install git+https://github.com/jtorleon-studios-team/maintenance-warden-light.git
 ```
