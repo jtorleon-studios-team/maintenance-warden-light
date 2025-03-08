@@ -18,8 +18,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "git:bot:release": "git tag v$(node -p \"require('./package.json').version\") && git push --tags",
-    "git:bot:save": "git add . && git commit -m \"$(node -p 'require(\"./package.json\").version')\" && git push",
+    "git:bot:save": "git add . && git commit -m \"save\" && git push",
     "git:bot:patch": "git add . && git commit -m \"auto commit before bump patch\" && npm version patch && npm run git:bot:release",
     "git:bot:minor": "git add . && git commit -m \"auto commit before bump minor\" && npm version minor && npm run git:bot:release",
     "git:bot:major": "git add . && git commit -m \"auto commit before bump major\" && npm version major && npm run git:bot:release",
