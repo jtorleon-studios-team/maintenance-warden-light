@@ -37,6 +37,7 @@ web_modules/
 .env.local
 out
 dist
+docs
 .temp
 .cache
 .vscode-test
