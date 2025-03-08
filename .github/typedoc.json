@@ -33,7 +33,7 @@
     "html",
     "markdown"
   ],
-  "watch": true,
+  "watch": false,
   "themeColor": "#333333",
   "compilerOptions": {
     "skipLibCheck": true,
