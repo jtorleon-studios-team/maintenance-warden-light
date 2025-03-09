@@ -21,7 +21,17 @@ jobs:
           node-version: "20.x"
           registry-url: "https://npm.pkg.github.com"
           scope: "@jtorleon-studios-team" 
+
+      - name: prepare
+        run: |
+          npm ci
+          npm run test
+          mkdir -p dist
+          cp -rv "src/main/." "license.md" "changelog.md" "readme.md" "package.json" dist
+
       - name: publish
-        run: npm publish
+        run: |
+          cd dist
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

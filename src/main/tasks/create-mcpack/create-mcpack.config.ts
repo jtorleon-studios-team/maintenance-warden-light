@@ -12,5 +12,6 @@ export interface CreateMcPackConfig {
   packName: string;
   description: string;
   version: string;
-  extension: "zip" | "mrpack" | "mcpack" | "rar";
+  extension: string;
+  type: "minecraft_pack" | "modrinth_pack" | "curseforge_pack" | "warden_pack";
 }

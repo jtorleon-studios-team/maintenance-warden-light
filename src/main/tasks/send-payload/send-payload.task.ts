@@ -4,9 +4,9 @@
  */
 
 import { SendPayloadConfig } from "./send-payload.config";
+import { CliHelper } from "../../utils/cli/cli.helper";
 import { request } from "undici";
 import { Logger } from "pino";
-import { CliHelper } from "../../utils/cli/cli.helper";
 
 /** 
  * Send Payload Task
@@ -48,4 +48,5 @@ export class SendPayloadTask {
       this._logger.error("Error sending payload:", { error, options: this._options });
     }
   }
+  
 }

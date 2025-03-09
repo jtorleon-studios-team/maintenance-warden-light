@@ -26,8 +26,8 @@
     "git:bot:major": "git add . && git commit -m \"auto commit before bump major\" && npm version major && npm run git:bot:release",
     "________________________________________________________": "console.log('')",
     "doc": "npx typedoc --groupReferencesByType --options .github/typedoc.local.json",
-    "start": "tsx ./test/index.ts | pino-pretty",
-    "dev": "tsx watch ./test/index.ts | pino-pretty",
+    "start": "tsx ./src/test/index.ts | pino-pretty",
+    "dev": "tsx watch ./src/test/index.ts | pino-pretty",
     "coverage": "npx test && npx make-coverage-badge --output-path ./.github/assets/coverage.svg",
     "test": "npx jest"
   },

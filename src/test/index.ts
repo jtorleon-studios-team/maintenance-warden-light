@@ -1,14 +1,13 @@
-import logger from "pino";
-import * as CreateBadge from "../main/tasks/create-badge";
+import * as Test from "../main/tasks/create-mcpack";
+import * as path from "path";
+console.log("--");
 
-; (async () => {
-  const o = logger({ name: "dev" });
-
- 
-  const t: CreateBadge.CreateBadgeConfig = {
-    
-  };
-  
-  o.info("starting index");
-  o.info("end index");
-})();
+new Test.CreateMcPackTask({
+  description: "",
+  extension: "zip",
+  inputDirectory: path.resolve(__dirname, "fake_pack"),
+  outputDirectory: "dist",
+  packName: "test",
+  version: "1.0.0",
+  type: "minecraft_pack"
+}).run();
