@@ -2,7 +2,7 @@
   "author": "@jtorleon-studios-team",
   "name": "@jtorleon-studios-team/maintenance-warden-light",
   "license": "GPL-2.0-only",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Automate and centralize Minecraft maintenance tasks with ease—pack generation, image optimization, webhooks, and more. 🚀",
   "type": "commonjs",
   "main": "index.js",
