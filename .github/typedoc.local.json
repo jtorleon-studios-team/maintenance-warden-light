@@ -2,7 +2,7 @@
   "$schema": "https://typedoc.org/schema.json",
   "navigationLinks": {
     "projects": "https://modrinth.com/organization/jtorleon_studios",
-    "discord": "https://jtorleon-studios-team.github.io/",
+    "discord": "https://jtorleon-studios-team.github.io/discord.html",
     "github": "https://github.com/jtorleon-studios-team/maintenance-warden-light",
   },
   "sidebarLinks": {},
@@ -48,7 +48,7 @@
   "includeHierarchySummary": false,
   "alwaysCreateEntryPointModule": false,
   "customFooterHtmlDisableWrapper": true,
-  "customFooterHtml": "<div class=footer-link><div><ul><li>Crafted by <strong><a href=https://jtorleon-studios-team.github.io/ target=_blank>JTorLeon Studios Team</a></strong> 2025</ul></div><div><h4>Contact</h4><ul><li><a href=https://jtorleon-studios-team.github.io/ target=_blank>Discord</a><li><a href=https://github.com/jtorleon-studios-team/maintenance-warden-light/issues target=_blank>Report Issues</a></ul></div><div><h4>Legal</h4><ul><li><a href=# target=_blank>Terms of Use</a><li><a href=# target=_blank>Privacy Policy</a></ul></div><div><h4>Crafted with</h4><ul><li><a href=https://typedoc.org target=_blank>TypeDoc</a><li><a href=https://github.com/dmnsgn/typedoc-material-theme target=_blank>Typedoc Material</a></ul></div><p>THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT. IT IS NOT ENDORSED OR AFFILIATED WITH MOJANG OR MICROSOFT.</div>",
+  "customFooterHtml": "<div class=footer-link><div><ul><li>Crafted by <strong><a href=https://jtorleon-studios-team.github.io/discord.html target=_blank>JTorLeon Studios Team</a></strong> 2025</ul></div><div><h4>Contact</h4><ul><li><a href=https://jtorleon-studios-team.github.io/ target=_blank>Discord</a><li><a href=https://github.com/jtorleon-studios-team/maintenance-warden-light/issues target=_blank>Report Issues</a></ul></div><div><h4>Legal</h4><ul><li><a href=# target=_blank>Terms of Use</a><li><a href=# target=_blank>Privacy Policy</a></ul></div><div><h4>Crafted with</h4><ul><li><a href=https://typedoc.org target=_blank>TypeDoc</a><li><a href=https://github.com/dmnsgn/typedoc-material-theme target=_blank>Typedoc Material</a></ul></div><p>THIS IS NOT AN OFFICIAL MINECRAFT PRODUCT. IT IS NOT ENDORSED OR AFFILIATED WITH MOJANG OR MICROSOFT.</div>",
   "kindSortOrder": [
     "Document",
     "Reference",
