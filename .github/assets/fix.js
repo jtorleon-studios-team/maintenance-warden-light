@@ -30,11 +30,11 @@
   function applyLinks() {
     const links = document.querySelectorAll("a");
     const content = document.querySelectorAll("div.col-content");
-    const siteDomain = new URL(window.location.href).hostname;
+ 
 
     if (content && content.length === 1 && links.length > 0) {
       for (const v of links) {
-        if (new URL(v.href).hostname !== siteDomain) {
+        if (v.href.startsWith(window.location.origin)) {
           v.target = "_blank";
           continue;
         }
