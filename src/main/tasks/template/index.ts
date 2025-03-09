@@ -1,6 +1,6 @@
 /**
  * ## Create Badge
- * @module tasks/_template  
+ * @module tasks/template  
  * @packageDocumentation
  * @ignore <<<< <<<<<<< <<<<<<< <<<<<<<< <<<<<<<< <<<<<<
  */

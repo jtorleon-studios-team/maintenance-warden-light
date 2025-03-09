@@ -1,5 +1,5 @@
 import logger from "pino";
-import * as CreateBadge from "../src/main/tasks/create-badge";
+import * as CreateBadge from "../main/tasks/create-badge";
 
 ; (async () => {
   const o = logger({ name: "dev" });

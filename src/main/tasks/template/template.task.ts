@@ -1,6 +1,7 @@
 /**
  * @module
- * @mergeModuleWith tasks/_template
+ * @mergeModuleWith tasks/template
+ * @ignore <<<< <<<<<<< <<<<<<< <<<<<<<< <<<<<<<< <<<<<<
  */
 
 import { TemplateConfig } from "./template.config";

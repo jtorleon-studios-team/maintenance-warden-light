@@ -2,13 +2,15 @@
  * @module
  * @mergeModuleWith tasks/create-mcpack
  */
- 
+
 /**
- * 
+ * doc
  */
-export type CreateMcPackConfig = {
-  /**
-   * Webhook URL of the discord server
-   */
-  webhook: string
+export interface CreateMcPackConfig {
+  inputDirectory: string;
+  outputDirectory: string;
+  packName: string;
+  description: string;
+  version: string;
+  extension: "zip" | "mrpack" | "mcpack" | "rar";
 }

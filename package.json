@@ -32,11 +32,14 @@
     "test": "npx jest"
   },
   "dependencies": {
+    "adm-zip": "^0.5.16",
     "pino": "^9.6.0",
+    "semver": "^7.7.1",
     "sharp": "^0.33.5",
     "undici": "^7.4.0"
   },
   "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.8",
     "make-coverage-badge": "^1.2.0",

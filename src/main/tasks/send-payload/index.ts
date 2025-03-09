@@ -1,6 +1,6 @@
 /**  
  * #### Example
- * {@includeCode ../../../../test/create-badge/create-badge.example.ts}
+ * {@includeCode ../../../test/create-badge/create-badge.example.ts}
  * {@include ../../../../.github/assets/cta.md}
  * @author JTorleon Studios Team
  * @module tasks/send-payload
