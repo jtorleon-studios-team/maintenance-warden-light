@@ -34,7 +34,7 @@
 
     if (content && content.length === 1 && links.length > 0) {
       for (const v of links) {
-        if (v.href.startsWith(window.location.origin)) {
+        if (!v.href.startsWith(window.location.origin)) {
           v.target = "_blank";
           continue;
         }
