@@ -1,8 +1,16 @@
-import * as Utils from "@jtorleon-studios-team/maintenance-warden-light/src/utils/utils";
-import * as Badge from "@jtorleon-studios-team/maintenance-warden-light/src/utils/badges.utils";
+import { CliHelper } from "@jtorleon-studios-team/maintenance-warden-light/utils/cli/cli.helper";
+import { CreateMcPackTask } from "@jtorleon-studios-team/maintenance-warden-light/tasks/create-mcpack/create-mcpack.task"
+import * as path from "path";
 
-const logger = Utils.createSimpleLogger("mdk-example");
+const logger = CliHelper.createSimpleLogger("mdk-example");
 logger.info("starting index");
 
-const result = Badge.getModrinthBadgeVersions("dGVX5JbJ")
-logger.info(`badge: ${result}`);
+new CreateMcPackTask({
+  description: "",
+  extension: "zip",
+  inputDirectory: path.resolve(__dirname, "src"),
+  outputDirectory: "dist",
+  packName: "test",
+  version: "1.0.0",
+  type: "minecraft_pack"
+}).run();
